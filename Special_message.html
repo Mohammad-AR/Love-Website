@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Special Message</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="love_counter.html">Love Counter</a></li>
+        <li>
+          <a href="special_message.html" class="active">Special Message</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="background-overlay"></div>
+    <div class="falling-hearts"></div>
+
+    <div class="content-wrapper">
+      <div class="message-container">
+        <h2>Unlock Your Special Message</h2>
+        <div class="password-section">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter Secret Word"
+            autocomplete="off"
+          />
+          <button id="unlockMessageBtn">Unlock</button>
+        </div>
+        <p id="passwordErrorMessage" class="error-message"></p>
+
+        <div id="secretContent" class="secret-content">
+          <div class="images-row">
+            <img
+              src="images/me.jpg"
+              alt="Your Photo"
+              class="message-photo left-photo"
+            />
+            <img
+              src="images/her.jpg"
+              alt="Her Photo"
+              class="message-photo right-photo"
+            />
+          </div>
+          <p class="special-text">
+            My Beasty, <br /><br />
+
+            This is a special message to my special lady on our special day, I
+            love you so much it's like it's 10-6-2021 💖. My feelings have
+            remained the same and will remain so and I will continue to go
+            deeper and deeper in my love for you. I apologize for the distance
+            that has increased between us recently due to my many
+            preoccupations, but I want you to know that you will always be in my
+            heart and my one and only love, I love you so much and this will
+            remain our special day forever💗🌠, each of us celebrating it alone
+            until we finally celebrate it together at the end, This message is
+            just for your eyes. Every moment with you is a treasure, and your
+            smile is my greatest joy. You inspire me, make me laugh, and simply
+            make my world a better place. Thank you for being you. <br /><br />
+            With all my heart, <br />
+            Your Always Lover ❤️
+          </p>
+
+<div class="audio-players-row">
+    <div class="audio-player-item">
+        <p class="audio-title">Our Special Arabic Song 🎶</p>
+        <audio id="arabicSong">
+            <source src="audio/Amr_Diab.mp3" type="audio/mpeg" />
+            متصفحك لا يدعم عنصر الصوت العربي.
+        </audio>
+        <div class="audio-controls">
+            <button class="play-pause-btn" data-audio="arabicSong">
+                <span class="icon">▶️</span>
+            </button>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <span class="time-display">0:00 / 0:00</span>
+        </div>
+    </div>
+
+    <div class="audio-player-item">
+        <p class="audio-title">Our Special English Song 🎵</p>
+        <audio id="englishSong">
+            <source src="audio/Ed _Sheeran.mp3" type="audio/mpeg" />
+            متصفحك لا يدعم عنصر الصوت الأجنبي.
+        </audio>
+        <div class="audio-controls">
+            <button class="play-pause-btn" data-audio="englishSong">
+                <span class="icon">▶️</span>
+            </button>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <span class="time-display">0:00 / 0:00</span>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

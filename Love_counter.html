@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Love Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="love_counter.html" class="active">Love Counter</a></li>
+        <li><a href="special_message.html">Special Message</a></li>
+      </ul>
+    </nav>
+
+    <div class="background-overlay"></div>
+    <div class="falling-hearts"></div>
+
+    <div class="content-wrapper">
+      <div class="love-counter-container">
+        <h2>Calculate Your Love</h2>
+        <div class="input-section">
+          <input
+            type="text"
+            id="beasty"
+            placeholder="Your Name"
+            autocomplete="off"
+          />
+          <span class="love-symbol">❤️</span>
+          <input
+            type="text"
+            id="fluffy-puffy"
+            placeholder="His Name"
+            autocomplete="off"
+          />
+          <button id="checkLoveBtn">Check Love</button>
+        </div>
+        <p id="errorMessage" class="error-message"></p>
+
+        <div class="hearts-display">
+          <div class="heart-pair">
+            <img
+              src="images/beating_heart.gif"
+              alt="Beating Heart"
+              class="beating-heart-img"
+              id="beatingHeart1"
+            />
+            <p class="percentage" id="percentage1">0%</p>
+            <p class="name-display" id="nameDisplay1"></p>
+          </div>
+          <div class="heart-pair">
+            <img
+              src="images/beating_heart.gif"
+              alt="Beating Heart"
+              class="beating-heart-img"
+              id="beatingHeart2"
+            />
+            <p class="percentage" id="percentage2">0%</p>
+            <p class="name-display" id="nameDisplay2"></p>
+          </div>
+        </div>
+
+        <div class="animated-names-container">
+          <p class="animated-name" id="animatedName1"></p>
+          <p class="animated-name" id="animatedName2"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
